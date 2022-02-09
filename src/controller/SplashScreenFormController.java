@@ -42,23 +42,17 @@ public class SplashScreenFormController {
 
 
         new Thread(()->{
-
             sleep(100);
-
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "mysql");
                 updateProgress("Establishing DB Connection..", 1.0);
                 sleep(200);
 
-
                 Platform.runLater(() -> {
                     loadLoginForm(connection);
                     System.out.println("done");
                 });
-
-
-
 
             } catch (SQLException | ClassNotFoundException e) {
                 /* Let's find out whether the DB exists or not */
@@ -68,7 +62,6 @@ public class SplashScreenFormController {
                     shutdownApp(e);
                 }
             }
-
 
         }).start();
 

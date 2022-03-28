@@ -1,6 +1,8 @@
 # Student Attendance System
 A simple system to mark student attendance
 
+![](img/sms.png)
+
 ### Version
 0.0.1
 

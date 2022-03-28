@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="578.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sajithdilshan.me.sas.controller.UserHomeFormController">
+   <children>
+      <HBox alignment="CENTER" layoutX="56.0" layoutY="191.0" spacing="10.0" />
+      <Label alignment="CENTER" layoutX="181.0" layoutY="103.0" text="Student Attendance System">
+         <font>
+            <Font name="Ubuntu Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGreeting" alignment="CENTER" layoutX="169.0" layoutY="126.0" prefHeight="16.0" prefWidth="246.0" text="Welcome user!">
+         <font>
+            <Font name="Ubuntu Light" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="535.0" text="Copyright © 2022 Sajith Dilshan. All Rights Reserved.">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHover" alignment="CENTER" layoutX="68.0" layoutY="150.0" prefHeight="16.0" prefWidth="449.0" text="Select an option to continue" textAlignment="CENTER">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="175.0" layoutX="239.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/sakya.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnViewReports1" accessibleText="Click to view attendance reports" contentDisplay="TOP" graphicTextGap="15.0" layoutX="328.0" layoutY="339.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnViewReports_OnAction" prefHeight="125.0" prefWidth="249.0" style="-fx-background-color: white;" text="[F12] Sign Out">
+         <graphic>
+            <ImageView fitHeight="79.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Ubuntu" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRecordAttendance1" accessibleText="Click to record a new student attendance" contentDisplay="TOP" graphicTextGap="15.0" layoutX="330.0" layoutY="191.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnRecordAttendance_OnAction" prefHeight="71.0" prefWidth="249.0" style="-fx-background-color: white;" text="[F3] User Profile">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Ubuntu" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRecordAttendance11" accessibleText="Click to record a new student attendance" contentDisplay="TOP" graphicTextGap="15.0" layoutX="43.0" layoutY="191.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnRecordAttendance_OnAction" prefHeight="71.0" prefWidth="249.0" style="-fx-background-color: white;" text="[F1] Record Attendance">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/attendance.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Ubuntu" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnViewReports11" accessibleText="Click to view attendance reports" contentDisplay="TOP" graphicTextGap="15.0" layoutX="43.0" layoutY="339.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnViewReports_OnAction" prefHeight="125.0" prefWidth="249.0" style="-fx-background-color: white;" text="[F2] View Reports">
+         <graphic>
+            <ImageView fitHeight="79.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/reports.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Ubuntu" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
